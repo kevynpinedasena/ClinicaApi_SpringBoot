@@ -33,12 +33,14 @@ public class PersonaDao {
 		return miPersonaVo;
 	}
 
+	
 	public List<PersonaVo> obtenerListaDePersonas() {
-		
 		return PersonasUtilidades.listaPersonas;
 	}
 	
+	
 	public PersonaVo registrarPersona(PersonaVo miPersonaVo) {
+		
 		boolean existe = false;
 		
 		for (PersonaVo obj : PersonasUtilidades.listaPersonas) {
@@ -56,6 +58,7 @@ public class PersonaDao {
 			return null;
 		}
 	}
+	
 	
 	public PersonaVo consultarLogin(String documento, String pass) {
 		
